@@ -1,2 +1,2 @@
 #!/usr/bin/env elixir
-x = 1
+_x = 1

@@ -5,10 +5,12 @@ defmodule MyMod do
   end
 end
 
-n =
-  2
-  |> MyMod.double()
-  |> MyMod.double()
-  |> MyMod.double()
+#n =
+#  2
+#  |> MyMod.double()
+#  |> MyMod.double()
+#  |> MyMod.double()
+
+n = 2 |> MyMod.double() |> MyMod.double() |> MyMod.double()
 
 IO.puts(n)

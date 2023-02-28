@@ -8,6 +8,7 @@ end
 n =
   2
   |> MyMod.double()
+  |> IO.inspect()
   |> MyMod.double()
   |> MyMod.double()
 

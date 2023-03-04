@@ -7,6 +7,9 @@ defmodule Greeter do
    * 注意点。
    * 注意点。
   """
+  @doc """
+  `name`への挨拶文を出力する
+  """
   def hello(name) do
     IO.puts("Hello, #{name}!")
   end

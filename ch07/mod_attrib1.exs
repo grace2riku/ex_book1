@@ -1,7 +1,15 @@
 #!/usr/bin/env elixir
 defmodule MyMod do
+  @reserved_names [
+    "admin",
+    "administrator",
+    "root",
+    "system"
+  ]
+
   def create_user(name) do
-    if name in ["admin", "administrator", "root", "system"] do
+#    if name in ["admin", "administrator", "root", "system"] do
+    if name in @reserved_names do
       {:error, :reserved}
     else
       user = %{type: "user", name: name}

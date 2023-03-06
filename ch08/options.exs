@@ -8,8 +8,8 @@ defmodule MyMod do
 end
 
 MyMod.hello("Alice")
-MyMod.hello("Alice", [word: "Bonjour"])
-MyMod.hello("Alice", [word: "Ciao", mark: "!!"])
+MyMod.hello("Alice", word: "Bonjour")
+MyMod.hello("Alice", word: "Ciao", mark: "!!")
 
 IO.inspect(MyMod.__info__(:functions))
 IO.inspect(MyMod.__info__(:functions), label: "【label:ありバージョン】MyMod module funcion list")

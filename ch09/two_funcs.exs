@@ -6,4 +6,7 @@ defmodule MyMod do
   defp func2, do: :ok
 end
 
+# func2はプライベート関数のためモジュールの外側からは呼べない。つぎのコードを有効にするとエラーになる。
+#IO.inspect(MyMod.func2())
+
 IO.inspect(MyMod.func1())

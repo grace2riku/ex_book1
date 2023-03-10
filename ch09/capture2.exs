@@ -5,7 +5,7 @@ defmodule MyMod do
     func.(3, 5)
   end
 
-  def multiply(a, b) do
+  defp multiply(a, b) do
     a * b
   end
 end

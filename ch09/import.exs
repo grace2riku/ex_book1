@@ -13,8 +13,8 @@ defmodule MyMod2 do
   end
 end
 
-#IO.inspect(MyMod2.experiment)
+IO.inspect(MyMod2.experiment)
 
 #MyMod1を取り込んでも関数func1/0がMyMod2のパブリック変数になるわけではない。
 #つぎはエラーになる
-IO.inspect(MyMod2.func1())
+#IO.inspect(MyMod2.func1())

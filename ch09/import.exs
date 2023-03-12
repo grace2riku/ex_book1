@@ -5,10 +5,10 @@ defmodule MyMod1 do
 end
 
 defmodule MyMod2 do
-#️  import MyMod1
-  import MyMod1, only: [func1: 0, func2: 0]
+#  import MyMod1, only: [func1: 0, func2: 0]
 
   def experiment do
+    import MyMod1, only: [func1: 0, func2: 0]
     func1() + func2()
   end
 end

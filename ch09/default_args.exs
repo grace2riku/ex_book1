@@ -4,7 +4,7 @@ defmodule MyMod1 do
 end
 
 defmodule MyMod2 do
-  import MyMod1, only: [add: 2]
+  import MyMod1, only: [add: 1]
   def experiment(a), do: add(a)
 end
 

@@ -5,4 +5,9 @@ defmodule MyMod do
   end
 end
 
-MyMod.show_tuple(1, do: 2, else: 3)
+#MyMod.show_tuple(1, do: 2, else: 3)
+MyMod.show_tuple 1 do
+  2
+else
+  3
+end
